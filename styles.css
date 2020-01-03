@@ -66,6 +66,21 @@ body, svg {
 	color: #FCF7FF;
 }
 
+.f1 {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+}
+
+.f2 {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
+}
+
+.f3 {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 900;
+}
+
 .fsize-h {
 	font-size: 7vw;
 	line-height: 6vw;
