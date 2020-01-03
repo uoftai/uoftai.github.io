@@ -11,9 +11,96 @@
 }
 
 .accent-blue {
-	background: #93B5C6;
+	background: #62cbcc;
 }
 
-.accent-yellow {
-	background: #F0CF65;
+.accent-magenta {
+	background: #ef3a8d;
 }
+
+#asteroids {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	z-index: 10;
+}
+
+body, svg {
+	background: #2E2A33;
+}
+
+.mission {
+	margin-top: -5vw;
+	padding-top: 9vw;
+	padding-bottom: 9vw;
+	background: #FCF7FF;
+	width: 100%;
+}
+
+.title {
+	position: absolute;
+	left: 50vw;
+	top: 45vh;
+    transform: translate(-50%, -50%);
+	text-anchor: center;
+}
+
+.text-dark {
+	color: #2E2A33;
+}
+
+.text-mid {
+	color: #544f5e;
+}
+
+.text-light {
+	color: #FCF7FF;
+}
+
+.fsize-h {
+	font-size: 7vw;
+	line-height: 6vw;
+}
+
+.fsize-l {
+	font-size: 5vw;
+}
+
+.fsize-m {
+	font-size: 2.5vw;
+}
+
+.subtitle {
+	margin-top: -1vw;
+}
+
+.title-text {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+}
+
+.body-text {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+.scroll-nice::-webkit-scrollbar {
+		width: 7px;
+	}
+
+	.scroll-nice::-webkit-scrollbar-track {
+		background: #FAFAFA;
+	}
+	 
+	.scroll-nice::-webkit-scrollbar-thumb {
+		background: #616161; 
+	}
