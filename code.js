@@ -239,3 +239,23 @@ function update() {
 init();
 
 setInterval(update, 15);
+
+$(window).scroll(function(){
+    if ($(window).scrollTop() < 25 && $('.nav-wrapper').hasClass('nav-dark')) {
+        $('.nav-wrapper').removeClass('nav-dark');
+        $('.nav-wrapper').addClass('nav-dark-clear');
+        $('nav').addClass('nav-no-shadow');
+    }
+    if ($(window).scrollTop() >= 25 && $('.nav-wrapper').hasClass('nav-dark-clear')) {
+        $('.nav-wrapper').removeClass('nav-dark-clear');
+        $('nav').removeClass('nav-no-shadow');
+        $('.nav-wrapper').addClass('nav-dark');
+    }
+});
+
+$(document).ready(function(){
+    $("a.scroll-link").click(function (event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top - window.innerHeight / 6 }, 650);
+    });
+});

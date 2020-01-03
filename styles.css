@@ -38,84 +38,75 @@ body, svg {
 	background: #2E2A33;
 }
 
-.mission {
-	margin-top: -5vw;
-	padding-top: 9vw;
-	padding-bottom: 9vw;
-	background: #FCF7FF;
-	width: 100%;
-}
-
-.title {
-	position: absolute;
-	left: 50vw;
-	top: 45vh;
-    transform: translate(-50%, -50%);
-	text-anchor: center;
-}
-
-.text-dark {
-	color: #2E2A33;
-}
-
-.text-mid {
-	color: #544f5e;
-}
-
-.text-light {
-	color: #FCF7FF;
-}
-
-.f1 {
+.body-weight {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 400;
 }
 
-.f2 {
+.subtitle-weight {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 700;
 }
 
-.f3 {
+.title-weight {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 900;
 }
 
-.fsize-h {
-	font-size: 7vw;
-	line-height: 6vw;
-}
-
-.fsize-l {
-	font-size: 5vw;
-}
-
-.fsize-m {
-	font-size: 2.5vw;
-}
-
-.subtitle {
-	margin-top: -1vw;
-}
-
-.title-text {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 800;
-}
-
-.body-text {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-}
-
 .scroll-nice::-webkit-scrollbar {
-		width: 7px;
-	}
+	width: 7px;
+}
 
-	.scroll-nice::-webkit-scrollbar-track {
-		background: #FAFAFA;
-	}
-	 
-	.scroll-nice::-webkit-scrollbar-thumb {
-		background: #616161; 
-	}
+.scroll-nice::-webkit-scrollbar-track {
+	background: #FAFAFA;
+}
+ 
+.scroll-nice::-webkit-scrollbar-thumb {
+	background: #616161; 
+}
+
+.nav-wrapper {
+	transition: background-color .45s ease !important;
+}
+
+nav {
+	transition: -webkit-box-shadow .4s ease, box-shadow .4s ease;
+	background-color: rgba(0,0,0,0) !important;
+}
+
+.nav-no-shadow {
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.nav-text {
+	transition: color .8s ease;	
+}
+
+.nav-dark-clear {
+	background-color: rgba(33,33,33,0) !important;
+}
+
+.nav-dark {
+	background-color: rgba(33,33,33,.4) !important;
+}
+
+.nav-dark:hover {
+	background-color: rgba(33,33,33,1) !important;
+}
+
+.nav-light {
+	background-color: rgba(244,244,244,.4) !important;
+}
+
+.nav-light:hover {
+	background-color: rgba(244,244,244,1) !important;
+}
+
+.nav-text-dark {
+	color: #212121 !important;
+}
+
+.nav-text-light {
+	color: #F5F5F5 !important;
+}
