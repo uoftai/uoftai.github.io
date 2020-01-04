@@ -113,7 +113,7 @@ nav {
 
 #intro-left {
 	position: absolute;
-	left: 12vw;
+	left: 15vw;
 	top: 45vh;
     transform: translate(0, -50%);
     max-width: 40vw;
@@ -148,4 +148,24 @@ nav {
 .fsize-h {
 	font-size: 8vw;
 	line-height: 7.5vw;
+}
+
+a.bot {
+	color: #FCF7FF !important;
+	border-bottom: dotted #FCF7FF !important;
+    border-bottom-width: thin;
+}
+
+a.bot:hover {
+	color: #FCF7FF !important;
+	border-bottom: solid #FCF7FF !important;
+    border-bottom-width: thin;
+}
+
+.separator {
+	margin-left: 25vw;
+	width: 50vw;
+	height: 1vh;
+	border-bottom: solid #FCF7FF !important;
+    border-bottom-width: thin;
 }
