@@ -183,11 +183,11 @@ let star_rad = 0.01 * window.innerWidth;
 let velo = [];
 let rot = [];
 
-let NUM_ASTEROIDS = 30;
+let NUM_ASTEROIDS = 0.02 * window.innerWidth;
 let AST_COLOURS = ['312C38', '322E38'];
 
 function init() {
-	for (let i = 0; i < NUM_ASTEROIDS / 1.6; i++) {
+	for (let i = 0; i < NUM_ASTEROIDS / 1.8; i++) {
 		$('#ast-container').html($('#ast-container').html() + '<path id="star' + i + '" d="M ' + random(star_rad * 2, viewbox[0] - star_rad * 2) + ',' + random(star_rad * 2, viewbox[1] - star_rad * 2) + ' l 0.001,0"'
 			+ ' stroke-width="' + random(2, 8) + '" stroke-linecap="round" stroke="#FCF7F2"></path>');
 	}

@@ -45,12 +45,12 @@ body, svg {
 
 .subtitle-weight {
 	font-family: 'Nunito', sans-serif;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .title-weight {
 	font-family: 'Nunito', sans-serif;
-	font-weight: 900;
+	font-weight: 800;
 }
 
 .scroll-nice::-webkit-scrollbar {
@@ -84,15 +84,15 @@ nav {
 }
 
 .nav-dark-clear {
-	background-color: rgba(33,33,33,0) !important;
+	background-color: rgba(46,42,51,0) !important;
 }
 
 .nav-dark {
-	background-color: rgba(33,33,33,.4) !important;
+	background-color: rgba(46,42,51,.4) !important;
 }
 
 .nav-dark:hover {
-	background-color: rgba(33,33,33,1) !important;
+	background-color: rgba(46,42,51,1) !important;
 }
 
 .nav-light {
@@ -104,9 +104,48 @@ nav {
 }
 
 .nav-text-dark {
-	color: #212121 !important;
+	color: #2E2A33 !important;
 }
 
 .nav-text-light {
 	color: #F5F5F5 !important;
+}
+
+#intro-left {
+	position: absolute;
+	left: 12vw;
+	top: 45vh;
+    transform: translate(0, -50%);
+    max-width: 40vw;
+	height: 40vh;
+}
+
+#intro-right {
+	position: absolute;
+	left: 55vw;
+	top: 45vh;
+	width: 30vw;
+	height: 30vw;
+	transform: translate(0, -50%);
+
+	background: #544F5E;
+}
+
+.fsize-s {
+	font-size: 1.5vw;
+}
+
+.fsize-m {
+	font-size: 3vw;
+	line-height: 3.1vw;
+}
+
+.fsize-l {
+	font-size: 5vw;
+	line-height: 4.5vw;
+}
+
+.fsize-h {
+	font-size: 8vw;
+	line-height: 7.5vw;
 }
