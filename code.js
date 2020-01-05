@@ -183,7 +183,13 @@ let star_rad = 0.01 * window.innerWidth;
 let velo = [];
 let rot = [];
 
-let NUM_ASTEROIDS = 0.02 * window.innerWidth;
+let asteroid_scale = 0.02;
+
+if ($('asteroid-scale').length) {
+	asteroid_scale = parseFloat($('asteroid-scale').html());
+}
+
+let NUM_ASTEROIDS = asteroid_scale * window.innerWidth;
 let AST_COLOURS = ['312C38', '322E38'];
 let STAR_COLOURS = ['E3E0DB', 'D8D2C9']
 
