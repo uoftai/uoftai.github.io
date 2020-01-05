@@ -6,8 +6,16 @@
 	background: #544F5E;
 }
 
+.bg-light {
+	background: #FCF7FF !important;
+}
+
 .text-light {
 	color: #FCF7FF;
+}
+
+.text-dark {
+	color: #2E2A33;
 }
 
 .accent-blue {
@@ -51,18 +59,6 @@ body, svg {
 .title-weight {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 800;
-}
-
-.scroll-nice::-webkit-scrollbar {
-	width: 7px;
-}
-
-.scroll-nice::-webkit-scrollbar-track {
-	background: #FAFAFA;
-}
- 
-.scroll-nice::-webkit-scrollbar-thumb {
-	background: #616161; 
 }
 
 .nav-wrapper {
@@ -131,6 +127,10 @@ nav {
 	background: #544F5E;
 }
 
+.fsize-t {
+	font-size: 0.7vw;
+}
+
 .fsize-s {
 	font-size: 1.5vw;
 }
@@ -148,6 +148,10 @@ nav {
 .fsize-h {
 	font-size: 8vw;
 	line-height: 7.5vw;
+}
+
+.space {
+	height: 5vh;
 }
 
 a.bot {
@@ -168,4 +172,170 @@ a.bot:hover {
 	height: 1vh;
 	border-bottom: solid #FCF7FF !important;
     border-bottom-width: thin;
+}
+
+@media only screen and (min-width: 992px) and (min-height: 120vw) {
+}
+
+@media only screen and (min-width: 992px) and (min-height: 120vw) and (max-width: 1200px) {
+}
+
+@media only screen and (min-width: 992px) and (min-height: 150vw) and (max-width: 1200px) {
+}
+
+@media only screen and (min-width: 992px) and (min-height: 150vw) {
+}
+
+@media only screen and (min-height: 550px) and (max-width: 450px) {
+	.scl-text {
+		font-size: 3vmin !important;
+	}
+}
+
+@media only screen and (max-height: 450px) and (min-width: 550px) {
+	.scl-text {
+		font-size: 1.5vw !important;
+	}
+}
+
+@media only screen and (max-height: 675px) and (min-width: 550px) {
+	.scl-text {
+		font-size: 1.5vw !important;
+	}
+}
+
+@media only screen and (max-height: 650px) and (max-width: 650px) {
+	.hide-on-small-only {
+		display: none !important;
+	}
+}
+
+@media only screen and (min-width: 400px) {
+	.hide-on-tiny {
+		display: block;
+	}
+
+	.show-on-tiny {
+		display: none;
+	}
+
+	.scl-text {
+		font-size: 2vmin;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.hide-on-tiny {
+		display: none;
+	}
+
+	.show-on-tiny {
+		display: block;
+	}
+
+	.scl-text {
+		font-size: 2.5vmin;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.scroll-nice::-webkit-scrollbar {
+		width: 7px;
+	}
+
+	.scroll-nice::-webkit-scrollbar-track {
+		background: #FAFAFA;
+	}
+	 
+	.scroll-nice::-webkit-scrollbar-thumb {
+		background: #616161; 
+	}
+
+	.show-on-small-only {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	::-webkit-scrollbar { 
+		display: none; 
+	}
+
+	.center-m {
+		text-align: center;
+	}
+	
+	.show-on-small-only {
+		display: block;
+	}
+
+	.show-on-med-only {
+		display: none !important;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.hide-on-large-and-up {
+		display: none !important;
+	}
+
+	.show-on-med-and-down {
+		display: none;
+	}
+
+	.show-on-med-only {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.show-on-med-and-down {
+		display: block;
+	}
+
+	.show-on-med-only {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.hide-on-large-and-up {
+		display: none !important;
+	}
+
+	.hide-on-large-and-down {
+		display: block;
+	}
+
+	.show-on-large-and-down {
+		display: none;
+	}
+
+	.scl-text {
+		font-size: 2.2vmin;
+	}
+}
+
+
+@media only screen and (max-width: 1200px) {
+	.hide-on-large-and-down {
+		display: none !important;
+	}
+
+	.show-on-large-and-down {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 1700px) {
+	.scl-text {
+		font-size: 2.5vmin;
+	}
+}
+
+
+@media only screen and (min-width: 2100px) {
+	.scroll-nice::-webkit-scrollbar {
+		width: 12px;
+	}
 }
