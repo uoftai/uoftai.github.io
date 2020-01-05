@@ -141,8 +141,7 @@ nav {
 	left: 15vw;
 	top: 45vh;
     transform: translate(0, -50%);
-    max-width: 40vw;
-	height: 40vh;
+    max-width: 35vw;
 }
 
 #intro-right {
