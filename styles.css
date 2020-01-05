@@ -58,6 +58,23 @@ body, svg {
 	background: #2E2A33;
 }
 
+blockquote {
+	border-left: 5px solid #544F5E !important;
+}
+
+.coll.with-header .coll-item {
+	padding-left: 30px;
+}
+
+.coll-header {
+	padding: 10px 0px;
+}
+
+.coll-item {
+	padding: 10px 20px;
+	margin: 0;
+}
+
 .body-weight {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 400;
