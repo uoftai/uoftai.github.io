@@ -155,6 +155,13 @@ nav {
 	background: #544F5E;
 }
 
+.top-center {
+	position: absolute;
+	left: 50vw;
+	top: 45vh;
+    transform: translate(-50%, -50%);
+}
+
 .flex-row {
 	display: flex;
 }
