@@ -149,10 +149,8 @@ nav {
 	left: 55vw;
 	top: 45vh;
 	width: 30vw;
-	height: 30vw;
+	height: 23vw;
 	transform: translate(0, -50%);
-
-	background: #544F5E;
 }
 
 .top-center {
