@@ -5,6 +5,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Raleway:400,600,700&display=swap" rel="stylesheet">
 	<!-- font-family: 'Nunito', sans-serif; -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>UofT AI Homepage</title>
 </head>
 <body>
@@ -29,14 +30,14 @@
 
 		<!-- &origof; &imof; &drcrop; &dlcrop; &urcrop; &ulcrop; &telrec; &solbar; -->
 
-		<div id="intro-spacer" style="height: 85vh;"></div>
+		<div id="intro-spacer"></div>
 		<div id="intro-left" class="text-light">
 			<div class="title-weight fsize-l">LearnAI</div>
-			<br/><br/>
+			<br/><div class="hide-on-med-and-down"><br/></div>
 			<div class="body-weight fsize-m">
 				<span class="highlight blue_accent">Introductory</span> 
 				machine learning curriculum for undergraduate students.</div>
-				<br/><br/>
+				<br/><div class="hide-on-med-and-down"><br/></div>
 				<a class="bot subtitle-weight fsize-m" href="learnai/">Find out more</a>
 			</div>
 
@@ -50,13 +51,16 @@
 
 		<div class="container text-light">
 			<div class="flex-row valign-wrapper">
-				<div class="flex-col body-weight fsize-s valign hide-on-small-only">
+				<div class="flex-col body-weight fsize-s valign hide-on-med-and-down">
 					The Toronto region is home to the highest concentration of AI startups in the world. We feel it is vital that university students have a club that enables them to engage with the opportunities that exist in this space. For more information about our purpose and the work we are doing to facilitate these opportunities, you can <a class="bot subtitle-weight" href="about/">learn more about us</a>.
 				</div>
-				<div class="flex-col body-weight fsize-m- valign show-on-small-only">
+				<div class="flex-col body-weight fsize-m- valign show-on-med-only">
 					The Toronto region is home to the highest concentration of AI startups in the world. We feel it is vital that university students have a club that enables them to engage with the opportunities that exist in this space. For more information about our purpose and the work we are doing to facilitate these opportunities, you can <a class="bot subtitle-weight" href="about/">learn more about us</a>.
 				</div>
-				<div class="flex-col">
+				<div class="flex-col body-weight fsize-m valign show-on-small-only">
+					The Toronto region is home to the highest concentration of AI startups in the world. We feel it is vital that university students have a club that enables them to engage with the opportunities that exist in this space. For more information about our purpose and the work we are doing to facilitate these opportunities, you can <a class="bot subtitle-weight" href="about/">learn more about us</a>.
+				</div>
+				<div class="flex-col hide-on-small-only">
 					<img class="center" src="assets/images/bahen.png" alt="bahen" style="display: block; margin: 0 auto; width: 65%; height: auto; border-radius: 10px;">
 				</div>
 			</div>
@@ -68,12 +72,12 @@
 			<div class="container">
 				<div class="space"></div>
 				<div class="row text-dark">
-					<div class="col s4">
+					<div class="col m4 hide-on-small-only">
 						<div class="subtitle-weight fsize-m">
 							<a class="text-dark" href="#!"><img style="width: 50%; height: auto;" src="assets/images/uoftai.png"></a>
 						</div>
 					</div>
-					<div class="col s4">
+					<div class="col m4 hide-on-small-only">
 						<div class="subtitle-weight fsize-s">
 							Navigation
 						</div>
@@ -87,7 +91,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col s4">
+					<div class="col m4 hide-on-small-only">
 						<div class="subtitle-weight fsize-s">
 							Get In Touch
 						</div>
@@ -98,6 +102,34 @@
 								<li><a class="text-dark body-weight fsize-s-" target="_blank" href="https://www.linkedin.com/company/uaig-uoft/">LinkedIn</a></li>
 								<li><a class="text-dark body-weight fsize-s-" target="_blank" href="https://www.facebook.com/UofTUAIG/">Facebook</a></li>
 								<li><a class="text-dark body-weight fsize-s-" target="_blank" href="https://twitter.com/UaigUoft">Twitter</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col s6 show-on-small-only">
+						<div class="subtitle-weight fsize-m">
+							Navigation
+						</div>
+						<div>
+							<ul>
+								<li><div class="divider dark-grey"></div></li>
+								<li><a class="text-dark body-weight fsize-m-" href="learnai/">LearnAI</a></li>
+								<li><a class="text-dark body-weight fsize-m-" href="startai/">StartAI</a></li>
+								<li><a class="text-dark body-weight fsize-m-" href="aicup/">AI Cup</a></li>
+								<li><a class="text-dark body-weight fsize-m-" href="about/">About Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col s6 show-on-small-only">
+						<div class="subtitle-weight fsize-m">
+							Get In Touch
+						</div>
+						<div>
+							<ul>
+								<li><div class="divider dark-grey"></div></li>
+								<li><a class="text-dark body-weight fsize-m-" target="_top" href="mailto:general@uaig.ca">general@uaig.ca</a></li>
+								<li><a class="text-dark body-weight fsize-m-" target="_blank" href="https://www.linkedin.com/company/uaig-uoft/">LinkedIn</a></li>
+								<li><a class="text-dark body-weight fsize-m-" target="_blank" href="https://www.facebook.com/UofTUAIG/">Facebook</a></li>
+								<li><a class="text-dark body-weight fsize-m-" target="_blank" href="https://twitter.com/UaigUoft">Twitter</a></li>
 							</ul>
 						</div>
 					</div>
