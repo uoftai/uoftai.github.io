@@ -101,10 +101,37 @@ function is_smooth(proper_x, proper_y) {
 	return true;
 }
 
+function get_g_scale() {
+	if (window.innerWidth > 992) {
+		return 0.026 * window.innerWidth;
+	} else if (window.innerWidth <= 992 && window.innerWidth > 600) {
+		return 0.05 * window.innerWidth;
+	} 
+	return 0.07 * window.innerWidth;
+}
+
+function get_h_scale() {
+	if (window.innerWidth > 992) {
+		return 0.015 * window.innerWidth;
+	} else if (window.innerWidth <= 992 && window.innerWidth > 600) {
+		return 0.027 * window.innerWidth;
+	} 
+	return 0.035 * window.innerWidth;
+}
+
+function get_star_scale() {
+	if (window.innerWidth > 992) {
+		return 0.007 * window.innerWidth;
+	} else if (window.innerWidth <= 992 && window.innerWidth > 600) {
+		return 0.012 * window.innerWidth;
+	} 
+	return 0.017 * window.innerWidth;
+}
+
 let MIN_POINTS = 4;
 let MAX_POINTS = 7;
-let H_SCALE = 0.018 * window.innerWidth;
-let G_SCALE = 0.026 * window.innerWidth;
+let H_SCALE = get_h_scale();
+let G_SCALE = get_g_scale();
 
 let pi = Math.PI;
 
@@ -178,7 +205,7 @@ let asteroid_pos = [];
 
 let viewbox = [window.innerWidth, $('.content').height()];
 $('svg').attr('viewBox', '0 0 ' + viewbox[0] + ' ' + viewbox[1]);
-let star_rad = 0.01 * window.innerWidth;
+let star_rad = get_star_scale();
 
 let velo = [];
 let rot = [];
@@ -189,6 +216,12 @@ if ($('asteroid-scale').length) {
 	asteroid_scale = parseFloat($('asteroid-scale').html());
 }
 
+if (window.innerWidth <= 992 && window.innerWidth > 600) {
+	asteroid_scale *= 1.8;
+} else if (window.innerWidth <= 600) {
+	asteroid_scale *= 2.2;
+}
+
 let NUM_ASTEROIDS = asteroid_scale * window.innerWidth;
 let AST_COLOURS = ['312C38', '322E38'];
 let STAR_COLOURS = ['E3E0DB', 'D8D2C9']
@@ -196,7 +229,7 @@ let STAR_COLOURS = ['E3E0DB', 'D8D2C9']
 function init() {
 	for (let i = 0; i < NUM_ASTEROIDS / 1.8; i++) {
 		$('#ast-container').html($('#ast-container').html() + '<path id="star' + i + '" d="M ' + random(star_rad * 2, viewbox[0] - star_rad * 2) + ',' + random(star_rad * 2, viewbox[1] - star_rad * 2) + ' l 0.001,0"'
-			+ ' stroke-width="' + random(2, 8) + '" stroke-linecap="round" stroke="#' + STAR_COLOURS[Math.floor(random(0, STAR_COLOURS.length))] + '"></path>');
+			+ ' stroke-width="' + random(star_rad * 0.1, star_rad) + '" stroke-linecap="round" stroke="#' + STAR_COLOURS[Math.floor(random(0, STAR_COLOURS.length))] + '"></path>');
 	}
 
 	for (let i = 0; i < NUM_ASTEROIDS; i++) {
@@ -221,6 +254,9 @@ function update() {
 		viewbox[0] = window.innerWidth;
 		viewbox[1] = $('.content').height();
 		$('svg').attr('viewBox', '0 0 ' + viewbox[0] + ' ' + viewbox[1]);
+		H_SCALE = 0.015 * window.innerWidth;
+		G_SCALE = 0.026 * window.innerWidth;
+		star_rad = 0.01 * window.innerWidth;
 	}
 
 	for (let i = 0; i < NUM_ASTEROIDS; i++) {

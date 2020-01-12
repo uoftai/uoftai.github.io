@@ -180,6 +180,11 @@ nav {
 	font-size: 1.5vw;
 }
 
+.fsize-m- {
+	font-size: 2.1vw;
+	line-height: 2.4vw;
+}
+
 .fsize-m {
 	font-size: 3vw;
 	line-height: 3.1vw;
@@ -235,42 +240,6 @@ a.bot:hover {
     border-bottom-width: thin;
 }
 
-@media only screen and (min-width: 992px) and (min-height: 120vw) {
-}
-
-@media only screen and (min-width: 992px) and (min-height: 120vw) and (max-width: 1200px) {
-}
-
-@media only screen and (min-width: 992px) and (min-height: 150vw) and (max-width: 1200px) {
-}
-
-@media only screen and (min-width: 992px) and (min-height: 150vw) {
-}
-
-@media only screen and (min-height: 550px) and (max-width: 450px) {
-	.scl-text {
-		font-size: 3vmin !important;
-	}
-}
-
-@media only screen and (max-height: 450px) and (min-width: 550px) {
-	.scl-text {
-		font-size: 1.5vw !important;
-	}
-}
-
-@media only screen and (max-height: 675px) and (min-width: 550px) {
-	.scl-text {
-		font-size: 1.5vw !important;
-	}
-}
-
-@media only screen and (max-height: 650px) and (max-width: 650px) {
-	.hide-on-small-only {
-		display: none !important;
-	}
-}
-
 @media only screen and (min-width: 400px) {
 	.hide-on-tiny {
 		display: block;
@@ -278,10 +247,6 @@ a.bot:hover {
 
 	.show-on-tiny {
 		display: none;
-	}
-
-	.scl-text {
-		font-size: 2vmin;
 	}
 }
 
@@ -292,10 +257,6 @@ a.bot:hover {
 
 	.show-on-tiny {
 		display: block;
-	}
-
-	.scl-text {
-		font-size: 2.5vmin;
 	}
 }
 
@@ -315,9 +276,17 @@ a.bot:hover {
 	.show-on-small-only {
 		display: none !important;
 	}
+
+	.hide-on-small-only {
+		display: block !important;
+	}
 }
 
 @media only screen and (max-width: 600px) {
+	.hide-on-small-only {
+		display: none !important;
+	}
+
 	::-webkit-scrollbar { 
 		display: none; 
 	}
