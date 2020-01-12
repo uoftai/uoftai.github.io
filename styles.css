@@ -234,6 +234,27 @@ a.bot:hover {
 	border-bottom: solid #FCF7FF !important;
     border-bottom-width: thin;
 }
+.highlight.start {
+    background-size: 100% 40%;
+}
+
+.highlight.pink_accent {
+    background-image: -webkit-linear-gradient(bottom, #ea498d 0%, #ea498d 100%);
+	background-image: linear-gradient(to top, #ea498d 0%, #ea498d 100%);
+
+}
+.highlight.blue_accent {
+    background-image: -webkit-linear-gradient(bottom, #62cbcc 0%, #62cbcc 100%);
+	background-image: linear-gradient(to top, #62cbcc 0%, #62cbcc 100%);
+}
+.highlight{
+	background-position: bottom left;
+    background-size: 0 40%;
+    background-repeat: no-repeat;
+    transition: background 1s cubic-bezier(0.42, 0, 0.095, 0.935);
+    transition-timing-function: cubic-bezier(0.42, 0, 0.095, 0.935);
+	transition-delay: .1s;
+}
 
 @media only screen and (min-width: 992px) and (min-height: 120vw) {
 }

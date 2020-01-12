@@ -33,10 +33,12 @@
 		<div id="intro-left" class="text-light">
 			<div class="title-weight fsize-l">LearnAI</div>
 			<br/><br/>
-			<div class="body-weight fsize-m">Introductory machine learning curriculum for undergraduate students.</div>
-			<br/><br/>
-			<a class="bot subtitle-weight fsize-m" href="learnai/">Find out more</a>
-		</div>
+			<div class="body-weight fsize-m">
+				<span class="highlight blue_accent">Introductory</span> 
+				machine learning curriculum for undergraduate students.</div>
+				<br/><br/>
+				<a class="bot subtitle-weight fsize-m" href="learnai/">Find out more</a>
+			</div>
 
 		<div id="intro-right" class="text-light subtitle-weight flow-text">
 			<img style="width: 100%; height: 100%; border-radius: 10px;" src="assets/images/home_page_header.JPEG">
@@ -102,6 +104,11 @@
 		</footer>
 	</div>
 </body>
+<script type="text/javascript">
+	setTimeout( () => {
+		document.getElementsByClassName('highlight')[0].className += " start"
+	}, 100)
+</script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script type="text/javascript" src="code.js"></script>
