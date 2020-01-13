@@ -234,7 +234,7 @@ function init() {
 
 	for (let i = 0; i < NUM_ASTEROIDS; i++) {
 		$('#ast-container').html($('#ast-container').html() + '<path id="ast' + i + '" d="" fill="#' + AST_COLOURS[Math.floor(random(0, AST_COLOURS.length))] + '" fill-opacity="1"></path>');
-		velo.push([random(0.0004 * viewbox[0], 0.001 * viewbox[0]), random(-0.0025 * viewbox[0], 0.0025 * viewbox[0])]);
+		velo.push([random(0.0004 * viewbox[0], 0.001 * viewbox[0]), random(-0.0004 * viewbox[0], 0.0004 * viewbox[0])]);
 		rot.push(random(-0.0004 * viewbox[0], 0.0004 * viewbox[0]))
 	}
 
