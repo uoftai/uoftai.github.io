@@ -297,6 +297,8 @@ $(window).scroll(function(){
 });
 
 $(document).ready(function(){
+	$('.sidenav').sidenav();
+
     $("a.scroll-link").click(function (event) {
         event.preventDefault();
         $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top - window.innerHeight / 6 }, 650);

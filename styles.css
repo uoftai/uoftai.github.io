@@ -77,17 +77,17 @@ blockquote {
 
 .body-weight {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
+	font-weight: 400 !important;
 }
 
 .subtitle-weight {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
+	font-weight: 600 !important;
 }
 
 .title-weight {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
+	font-weight: 700 !important;
 }
 
 .nav-wrapper {
@@ -140,7 +140,7 @@ nav {
 	position: absolute;
 	left: 50vw;
 	top: 45vh;
-    transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 .flex-row {
@@ -213,24 +213,28 @@ a.bot:hover {
 	border-bottom: 2px solid #FCF7FF !important;
 }
 
+#menu-icon {
+	font-size: 2vmax;
+}
+
 .highlight.start {
-    background-size: 100% 40%;
+	background-size: 100% 40%;
 }
 
 .highlight.pink_accent {
-    background-image: -webkit-linear-gradient(bottom, #ea498d66 0%, #ea498d66 100%);
+	background-image: -webkit-linear-gradient(bottom, #ea498d66 0%, #ea498d66 100%);
 	background-image: linear-gradient(to top, #ea498d66 0%, #ea498d66 100%);
 }
 .highlight.blue_accent {
-    background-image: -webkit-linear-gradient(bottom, #62cbcc66 0%, #62cbcc66 100%);
+	background-image: -webkit-linear-gradient(bottom, #62cbcc66 0%, #62cbcc66 100%);
 	background-image: linear-gradient(to top, #62cbcc66 0%, #62cbcc66 100%);
 }
 .highlight {
 	background-position: bottom left;
-    background-size: 0 40%;
-    background-repeat: no-repeat;
-    transition: background 1s cubic-bezier(0.42, 0, 0.095, 0.935);
-    transition-timing-function: cubic-bezier(0.42, 0, 0.095, 0.935);
+	background-size: 0 40%;
+	background-repeat: no-repeat;
+	transition: background 1s cubic-bezier(0.42, 0, 0.095, 0.935);
+	transition-timing-function: cubic-bezier(0.42, 0, 0.095, 0.935);
 	transition-delay: .1s;
 }
 

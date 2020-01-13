@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="../styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Raleway:400,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 	<!-- font-family: 'Nunito', sans-serif; -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +15,12 @@
 		</g>
 	</svg>
 	<div class="content">
-		<div class="navbar-fixed hide-on-med-and-down">
+		<div class="navbar-fixed">
 			<nav class="nav-no-shadow">
 				<div class="nav-wrapper nav-dark-clear">
+					<a href="#" data-target="slide-out" id="menu-icon" class="sidenav-trigger show-on-med-and-down text-light">
+						<div class="fa fa-bars"></div>
+					</a>
 					<a href="../" class="brand-logo subtitle-weight nav-text nav-text-light"><span class="hide-on-med-and-down">&nbsp;&nbsp;&nbsp;&nbsp;</span><img style="width: auto; height: 32px; margin-top: 16px;" src="../assets/images/uoftai_light.png"></a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li><a class="nav-text nav-text-light subtitle-weight flow-text" href="../learnai/">LearnAI</a></li>
@@ -142,6 +146,16 @@
 			</div>
 		</footer>
 	</div>
+
+	<ul id="slide-out" class="sidenav">
+		<div class="space"></div>
+		<li><a href="#" class="text-dark subtitle-weight fsize-m">Navigation</a></li>
+		<li><div class="divider"></div></li>
+		<li><a class="text-dark body-weight fsize-m-" href="../learnai/">LearnAI</a></li>
+		<li><a class="text-dark body-weight fsize-m-" href="#!">StartAI</a></li>
+		<li><a class="text-dark body-weight fsize-m-" href="../aicup/">AI Cup</a></li>
+		<li><a class="text-dark body-weight fsize-m-" href="../about/">About Us</a></li>
+	</ul>
 </body>
 <script type="text/javascript">
 setTimeout( () => {
